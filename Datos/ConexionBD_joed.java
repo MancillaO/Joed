@@ -61,9 +61,9 @@ public class ConexionBD_joed {
     public void listDuenos() {
         try {
             // Encabezado de la tabla
-            System.out.println("+----+------------------+------------------+");
-            System.out.println("| ID | Nombre           | Email            |");
-            System.out.println("+----+------------------+------------------+");
+            System.out.println("+----+------------------+----------------------------+");
+            System.out.println("| ID | Nombre           | Email                      |");
+            System.out.println("+----+------------------+----------------------------+");
 
             // Listar de MySQL
             try (Connection mysqlConn = getConnection("mysql");
@@ -90,7 +90,7 @@ public class ConexionBD_joed {
             }
 
             // Pie de la tabla
-            System.out.println("+----+------------------+------------------+");
+            System.out.println("+----+------------------+----------------------------+");
         } catch (SQLException e) {
             e.printStackTrace();
         }
